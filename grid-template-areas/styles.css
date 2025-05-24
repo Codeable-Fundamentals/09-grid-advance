@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: system-ui;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0px auto;
+  background-color: coral;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-areas:
+    "header header header sidebar"
+    "main main . sidebar"
+    "main main . sidebar"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+/* .contenedor * {
+    height: 150px;
+} */
+
+.header {
+  grid-area: header;
+  background-color: green;
+}
+
+.menu {
+  grid-area: sidebar;
+  background-color: rgb(227, 9, 9);
+}
+
+.main-content {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
+/* .menu-items {
+    height: 300px;
+    border : 4px solid black;
+} */

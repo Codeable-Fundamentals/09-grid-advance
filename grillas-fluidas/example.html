@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Alert</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+        /* 
+            El auto-fill , nos crea tantas columnas comos sean necesarias 
+            el minmax() nos ayuda a establecer que tan chicas y que tan grandes , queremos que sean nuestros grid items 
+            en esta casi el tamaño mas pequeño es 250px
+            y al tamaño mas grande es 1 fr , es decir todo lo que pueda ocupdar en una celda
+        */
+      }
+
+      .card {
+        padding: 16px;
+        background-color: whitesmoke;
+        border: 1px solid lightsteelblue;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        perspiciatis ad quidem totam dolorum molestias quisquam hic animi
+      </div>
+    </div>
+  </body>
+</html>
